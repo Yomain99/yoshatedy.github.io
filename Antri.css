@@ -1,0 +1,165 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+    font-family: sans-serif;
+    background-color: rgba(226, 224, 224, 0.445);
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+header{
+    background:  rgba(58, 58, 58, 0.2);
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: 5px solid #7e7e7e;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1{
+    margin: 0;  
+}
+header #branding a{
+    color: floralwhite;
+    text-decoration: none;
+}
+header nav{
+    float: right;
+    margin-top: 12px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    display: inline;
+    padding: 0 20px 0 20px;
+  }
+  
+  li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    font-size: 19px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  li a:hover {
+    color: #960083;
+    font-weight: bold;
+  }
+
+.kotak{
+    background: linear-gradient(to left,hsl(123, 100%, 50%),#079726);
+    color: #fff;
+    padding-top: 5px;
+    min-height: 10px;
+    border-bottom: 1px solid red;
+    border-top: 10px solid rgba(58, 58, 58, 0.2);
+  }
+.kotak h1{
+    text-align: center;
+}
+.tab {
+    border-collapse: collapse;
+    margin: 30px auto auto auto;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.tab tr th {
+    background-color:turquoise;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.tab th,
+.tab td{
+    padding: 12px 15px;
+}
+.tab td{
+    text-align: center;
+}
+.tab tbody tr {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dddddd;
+}
+tr {
+    transition:all .25s ease-in-out
+}
+tr:hover{
+    font-weight: bold;
+    cursor: pointer
+}
+.tab_2{
+    width: 300pt;
+    margin: 50pt auto 0 auto;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"]
+{
+    background: rgba(255,255,255,0.1);
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 303pt;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+input[type="date"]{
+    background: rgba(255,255,255,0.1);
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 303pt;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+button{
+    padding: 15px;
+    color: #fff;
+    background-color: turquoise;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 325pt;
+    border: 1px solid teal;
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 rgba(255,255,255,0.1);
+    margin-bottom: 10px; 
+}
+button:hover{
+    font-weight: bold;
+    background-color: white;
+    color: #4bc970;
+}

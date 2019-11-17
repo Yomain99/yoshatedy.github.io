@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>E-Hospital Unej</title>
+    <link rel="stylesheet" type="text/css" href="pesan.css">       
+</head>
+<body>
+<header>
+    <div class="container">
+        <div id="branding">
+            <a href="index.html"><h1> E-Hospital</h1></a>
+        </div>
+        <nav>
+            <ul>
+                <li class="active"><a href="Pelayanan.html" style="font-weight:bold">Rawat Inap</a></li>
+                <li> <a href="Antri.html">Antri Kesehatan</a></li>
+                <li> <a href="index.html">Hi!!! Yosha</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+        <div class="kotak">
+            <h1>Pesan Kamar Tidur</h1>
+        </div>
+        <section id="newsletter">
+                <div class="container">
+                    <h1> Cari Antrian Anda</h1>
+                    <form>
+                        <input type="text" placeholder="Masukkan Nama">
+                        <button class="buttonsubs">Check</button>
+                    </form>
+                </div>
+            </section>  
+                <table id="table" class="tab">
+                    <tr>
+                        <th>Nama</th>
+                        <th>Email</th>
+                        <th>Type Kamar</th>
+                        <th>No KK</th>
+                        <th>NIK</th>
+                        <th>Tanggal Pemesanan</th>
+                    </tr>
+                    <tr>
+                        <td>Kian Santang</td>
+                        <td>Santang87@gmail.com</td>
+                        <td>Presiden Suite</td>
+                        <td>018038927392830</td>
+                        <td>91239828212012</td>
+                        <td>2018-10-21</td>
+                    </tr>
+                    <tr>
+                            <td>Prabu Wangi</td>
+                            <td>Prabu=87@gmail.com</td>
+                            <td>VIP</td>
+                            <td>1232418927392830</td>
+                            <td>9123983434212012</td>
+                            <td>2018-10-21</td>
+                    </tr>
+                    <tr>
+                            <td>Bharata Yudha</td>
+                            <td>Yuda709@gmail.com</td>
+                            <td>VVIP A</td>
+                            <td>5656558927392830</td>
+                            <td>9637643644212012</td>
+                            <td>2018-11-29</td>
+                    </tr>
+                    <tr>
+                            <td>Gandawati</td>
+                            <td>Gandawati@gmail.com</td>
+                            <td>Kelas 1</td>
+                            <td>5678787878392830</td>
+                            <td>9767673644212012</td>
+                            <td>2018-12-30</td>
+                    </tr>
+                    <tr>
+                            <td>Srikandi</td>
+                            <td>Srikandi@gmail.com</td>
+                            <td>Kelas 2</td>
+                            <td>1212787878392830</td>
+                            <td>2323233344212012</td>
+                            <td>2019-1-1</td>
+                    </tr>
+                    <tr>
+                            <td>Kuntodewo</td>
+                            <td>Konto@gmail.com</td>
+                            <td>ICU</td>
+                            <td>0940394078392830</td>
+                            <td>9504954095045912</td>
+                            <td>2019-1-5</td>
+                    </tr>
+                    <tr>
+                            <td>Werkudoro</td>
+                            <td>Doro@gmail.com</td>
+                            <td>ICU</td>
+                            <td>9023092390299030</td>
+                            <td>6761262372622222</td>
+                            <td>2019-1-30</td>
+                    </tr>
+                    <tr>
+                            <td>Gathotkoco</td>
+                            <td>Gathot@gmail.com</td>
+                            <td>Presiden Suite</td>
+                            <td>8374837483743847</td>
+                            <td>9238297989283928</td>
+                            <td>2019-2-2</td>
+                    </tr>
+
+                </table>
+                <div class="tab_2">
+                        Nama Lengkap:<input type="text" name="nama" id="nama" autocomplete="off">
+                        Email :<input type="email" name="email" id="email">
+                        Type Kamar :<input type="text" name="TypeKamar" id="TypeKamar">
+                        Nomor Kartu Keluarga :<input type="number" name="NoKK" id="NoKK">
+                        Nomor Induk Kependudukan :<input type="number" name="NIK" id="NIK">
+                        Tanggal Pemesanan :<input type="date" name="TanggalPemesanan" id="TanggalPemesanan">
+                        <button onclick="addHtmlTableRow();">Tambah</button>
+                        <button onclick="removeSelectedRow();">Hapus</button>
+                    </div>
+        
+        <script>
+            
+            var rIndex,
+                table = document.getElementById("table");
+            
+            // check the empty input
+            function checkEmptyInput()
+            {
+                var isEmpty = false,
+                    nama = document.getElementById("nama").value,
+                    email = document.getElementById("email").value,
+                    TypeKamar = document.getElementById("TypeKamar").value,
+                    NoKK = document.getElementById("NoKK").value,
+                    NIK = document.getElementById("NIK").value,
+                    TanggalPemesanan = document.getElementById("TanggalPemesanan").value;
+                    
+                if(nama === ""){
+                    alert("Harap Isi Nama Lengkap Anda");
+                    isEmpty = true;
+                }
+                else if(email === ""){
+                    alert("Email Tidak Boleh Kosong");
+                    isEmpty = true;
+                }
+                else if(TypeKamar === ""){
+                    alert("Type Kamar Tidak Boleh Kosong");
+                    isEmpty = true;
+                }
+                else if(NoKK === ""){
+                    alert("No Kartu Keluarga Harap Isi Dengan Angka");
+                    isEmpty = true;
+                }
+                else if(NIK === ""){
+                    alert("Nomor Induk Kependudukan Harap Isi Dengan Angka");
+                    isEmpty = true;
+                }
+                else if(TanggalPemesanan === ""){
+                    alert("Tanggal Pemesanan Tidak Boleh Kosong");
+                    isEmpty = true;
+                }
+                return isEmpty;
+            }
+            
+            // add Row
+            function addHtmlTableRow()
+            {
+                // get the table by id
+                // create a new row and cells
+                // get value from input text
+                // set the values into row cell's
+                if(!checkEmptyInput()){
+                var newRow = table.insertRow(table.length),
+                    cell1 = newRow.insertCell(0),
+                    cell2 = newRow.insertCell(1),
+                    cell3 = newRow.insertCell(2),
+                    cell4 = newRow.insertCell(3),
+                    cell5 = newRow.insertCell(4),
+                    cell6 = newRow.insertCell(5),
+                    nama = document.getElementById("nama").value,
+                    email = document.getElementById("email").value,
+                    TypeKamar = document.getElementById("TypeKamar").value,
+                    NoKK = document.getElementById("NoKK").value,
+                    NIK = document.getElementById("NIK").value,
+                    TanggalPemesanan = document.getElementById("TanggalPemesanan").value;
+
+                cell1.innerHTML = nama;
+                cell2.innerHTML = email;
+                cell3.innerHTML = TypeKamar;
+                cell4.innerHTML = NoKK;
+                cell5.innerHTML = NIK;
+                cell6.innerHTML = TanggalPemesanan;
+                // call the function to set the event to the new row
+                selectedRowToInput();
+                }
+            }
+            
+            // display selected row data into input text
+            function selectedRowToInput()
+            {
+                
+                for(var i = 1; i < table.rows.length; i++)
+                {
+                    table.rows[i].onclick = function()
+                    {
+                      // get the seected row index
+                      rIndex = this.rowIndex;
+                      document.getElementById("nama").value = this.cells[0].innerHTML;
+                      document.getElementById("email").value = this.cells[1].innerHTML;
+                      document.getElementById("TypeKamar").value = this.cells[2].innerHTML;
+                      document.getElementById("NoKK").value = this.cells[3].innerHTML;
+                      document.getElementById("NIK").value = this.cells[4].innerHTML;
+                      document.getElementById("TanggalPemesanan").value = this.cells[5].innerHTML;
+                    };
+                }
+            }
+            function removeSelectedRow()
+            {
+                table.deleteRow(rIndex);
+                // clear input text
+                document.getElementById("nama").value = "";
+                document.getElementById("email").value = "";
+                document.getElementById("TypeKamar").value = "";
+                document.getElementById("NoKK").value = "";
+                document.getElementById("NIK").value = "";
+                document.getElementById("TanggalPemesanan").value = "";
+            }
+        </script>    
+    </body>
+</html>

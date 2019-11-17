@@ -1,0 +1,134 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: sans-serif;
+    background-color: rgba(226, 224, 224, 0.445);
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+header{
+    background: rgba(58, 58, 58, 0.2);
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: 5px solid #7e7e7e;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1{
+    margin: 0;
+    font-size: 30px;    
+}
+header #branding a{
+    color: floralwhite;
+    text-decoration: none;
+}
+header nav{
+    float: right;
+    margin-top: 12px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    display: inline;
+    padding: 0 20px 0 20px;
+  }
+  
+  li a{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  li a:hover {
+    color: #960083;
+    font-weight: bold;
+  }
+  
+  
+.kotak{
+  background: linear-gradient(to left,hsl(123, 100%, 50%),#079726);
+  color: #fff;
+  padding-top: 0px;
+  min-height: 10px;
+  border-bottom: 1px solid red;
+  border-top: 10px solid rgba(58, 58, 58, 0.2);
+  
+}
+.kotak h1{
+    text-align: center;
+}
+.mapel {
+    margin: 100px 0 0 230px;
+}
+.mapel a img{
+    width: 820px;
+    height: 300px;
+    margin: 0 14pt 0 14pt;
+    margin-left: 40px;
+
+}
+
+.buttonsubs{
+    height: 38px;
+    background-color: #ec1063;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color:#fff;
+}
+
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color:#fff;
+    background: linear-gradient(to right,#960083,#ff0000);
+    text-align: center;
+    
+}
+
+/*Media Query*/
+@media(max-width: 768px){
+    header #branding,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box
+    {
+        float: none;
+        text-align: center;
+        width:100;
+    }
+
+    header{
+        padding-bottom: 20px;
+    }
+    #showcase h1{
+        margin-top: 40px;
+    }
+    #newsletter button{
+        display: block;
+        width: 100%;
+    }
+    #newsletter input[type="email"]{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
