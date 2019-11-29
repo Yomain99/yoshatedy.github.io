@@ -1,7 +1,7 @@
 body{
 	margin: 0;
 	padding: 0;
-	background:url(bck.jpg);
+	background:url(bck.jpg) no-repeat;
 	background-size: cover;
 	font-size: 16px;
 	color: #777;
@@ -123,4 +123,16 @@ input[type="submit"]:focus{
 .right-box button:hover{
 	background: #ff5722;
 	transition: 0.2s ease;
+}
+
+@media screen and ( max-height: 900px){
+	.login-box {
+		width: auto;
+		min-width: 283px;
+
+	}
+	body{
+		width: auto;
+	}
+	
 }
