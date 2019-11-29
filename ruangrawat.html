@@ -1,34 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>E-Hospital Unej</title>
-    <link rel="stylesheet" type="text/css" href="ruangrawat.css">       
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>E-Hospital Unej</title>
+<link rel="stylesheet" type="text/css" href="ruangrawat.css">   
 </head>
 <body>
-<header>
-    <div class="container">
-        <div id="branding">
-            <a href="index.html"><h1> E-Hospital</h1></a>
-        </div>
-        <nav>
-            <ul>
-                <li class="active"><a href="pelayanan.html" style="font-weight:bold">Rawat Inap</a></li>
-                <li> <a href="Antri.html">Antri-Kesehatan</a></li>
-                <li> <a href="index.html">Hi!!! Yosha</a></li>
-            </ul>
-        </nav>
+<div class="topnav" id="myTopnav">
+    <h1>E-Hospital</h1>
+        <a href="pelayanan.html" style="font-weight:bold" class="active">Rawat Inap</a></li>
+        <a href="Antri.html">Antri-Kesehatan</a></li>
+        <a href="index.html">Hi!!! Yosha</a></li>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
     </div>
-</header>
 <div class="kotak">
     <h1>Instalasi Rawat Inap</h1>
 </div>    
 <div class="mapel">
-    <a href="Pesan.html"><img src="instansi1.png" alt=""></a>
-    <a href="Pesan.html"><img src="instansi2.png" alt=""></a>
-    <a href="Pesan.html"><img src="instansi3.png" alt=""></a>
-    <a href="Pesan.html"><img src="instansi4.png" alt=""></a>
+    <a href="pesan.html"><img src="instansi1.png" alt=""></a>
+    <a href="pesan.html"><img src="instansi2.png" alt=""></a>
+    <a href="pesan.html"><img src="instansi3.png" alt=""></a>
+    <a href="pesan.html"><img src="instansi4.png" alt=""></a>
 </div>
 <br><br>
 <br><br>
@@ -37,5 +32,15 @@
         Yosha Mahatma Indra Tedy Dani Kusuma Copyright@2019
     </p>
 </footer>
+<script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script> 
 </body>
 </html>
