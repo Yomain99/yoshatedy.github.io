@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Login</title>
+	<title>Daftar</title>
 	<link rel="stylesheet" type="text/css" href="styledaftar.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
 <body>
 	<div id="login-box">
@@ -10,11 +11,13 @@
 		<input type="text" name="Username" placeholder="Masukkan Username" autocomplete="off" required/>
 		<input type="number" name="NIK" placeholder="Masukkan No NIK"required/>
 		<input type="number" name="KPJ" placeholder="Masukkan No KPJ" required/>
-		<input type="email" name="email" placeholder="Masukkan Email" autocomplete="off" required/>
+		<input type="email" id="ez" name="email" placeholder="Masukkan Email" autocomplete="off" required/>
+		<small style="color: red;display: none;" id="notifA">Email sudah digunakan</small>
+		<small style="color: yellow;display: none;" id="notifB">Email belum digunakan</small><br>
 		<input type="password" name="password" placeholder="Password"/>
 		<input type="password" name="Re-password" placeholder="Re-Password"/>
 		<a href="login.html"><input type="submit" name="signup-button" value="Daftar"></a>
-	</div>		
+	</div>
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$("#ez").keyup(function(){
