@@ -2,6 +2,7 @@
 <head>
 	<title>Login</title>
 	<link rel="stylesheet" type="text/css" href="styledaftarrawat.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
 <body>
 	<div id="login-box">
@@ -9,12 +10,27 @@
 		<input type="text" name="Username" placeholder="Masukkan Username" autocomplete="off" required/>
 		<input type="number" name="NIK" placeholder="Masukkan No NIK"required/>
 		<input type="number" name="KPJ" placeholder="Masukkan No KPJ" required/>
-		<input type="email" name="email" placeholder="Masukkan Email" autocomplete="off" required/>
+		<input type="email" id="ez" name="email" placeholder="Masukkan Email" autocomplete="off" required/>
+		<small style="color: red;display: none;" id="notifA">Email sudah digunakan</small>
+		<small style="color: yellow;display: none;" id="notifB">Email belum digunakan</small><br>
 		<input type="password" name="password" placeholder="Password"/>
 		<input type="password" name="Re-password" placeholder="Re-Password"/>
 		<a href="loginrawat.html"><input type="submit" name="signup-button" value="Daftar"></a>
 	</div>
-
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#ez").keyup(function(){
+				if($("#ez").val() == "tedydany36@gmail.com") {
+					// alert('email sudah digunakan');
+					$("#notifA").css("display","block");
+					$("#notifB").css("display","none");
+				}else{
+					$("#notifB").css("display","block");
+					$("#notifA").css("display","none");
+				}
+			});
+		});
+	</script>
 	<div class="right-box">
 		<span class="signinwith"><br/><br/>Antri BPJS Kini Lebih Mudah Dengan E-BPJS<br/></span>
 	</div>
