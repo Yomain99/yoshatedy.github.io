@@ -15,7 +15,20 @@
 		<input type="password" name="Re-password" placeholder="Re-Password"/>
 		<a href="login.html"><input type="submit" name="signup-button" value="Daftar"></a>
 	</div>		
-
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#ez").keyup(function(){
+				if($("#ez").val() == "tedydany36@gmail.com") {
+					// alert('email sudah digunakan');
+					$("#notifA").css("display","block");
+					$("#notifB").css("display","none");
+				}else{
+					$("#notifB").css("display","block");
+					$("#notifA").css("display","none");
+				}
+			});
+		});
+	</script>
 	<div class="right-box">
 		<span class="signinwith"><br/><br/>Antri BPJS Kini Lebih Mudah Dengan E-BPJS<br/></span>
 	</div>
