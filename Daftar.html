@@ -4,6 +4,7 @@
 	<title>Daftar</title>
 	<link rel="stylesheet" type="text/css" href="styledaftar.css">
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<div id="login-box">
@@ -16,8 +17,27 @@
 		<small style="color: yellow;display: none;" id="notifB">Email belum digunakan</small><br>
 		<input type="password" name="password" placeholder="Password"/>
 		<input type="password" name="Re-password" placeholder="Re-Password"/>
+		<input type="file" id="inpFile" name="myFiles[]" multiple><br><br>
 		<a href="login.html"><input type="submit" name="signup-button" value="Daftar"></a>
 	</div>
+		
+	<script>
+		const inpFile = document.getElementById("inpFile")
+		const btnUplode = document.getElementById("btnUplode")
+
+		btnUplode.addEventListener("click", function() {
+			const xhr = new XMLHttpRequest();
+			const formData = new FormData();
+
+			for (const file of inpFile.file) {
+				formData.append("myFiles[]" , file);
+			}
+
+			xhr.open("post", "upload.php");
+			xhr.send(formData);
+		});
+	</script>	
+		
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$("#ez").keyup(function(){
