@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>E-Hospital Unej</title>
+<link rel="stylesheet" type="text/css" href="css/kamartidur.css">   
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+        <h1>E-Hospital</h1>
+        <a href="Pelayanan.html" style="font-weight:bold"class="active">Rawat Inap</a>
+        <a href="Antri.html">Antri-Kesehatan</a>
+        <a href="index.html">Hi!!! Yosha</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+</header>
+<body>
+    <div class="kotak" >
+        <h1>Pesan Kamar Tidur</h1>
+    </div>    
+    <div class="mapel" >
+        <a href="pesan.html"><img src="gambar/imag1.JPG" alt=""></a>
+        <a href="pesan.html"><img src="gambar/imag2.JPG" alt=""></a>
+        <a href="pesan.html"><img src="gambar/imag3.JPG" alt=""></a>
+        <a href="pesan.html"><img src="gambar/imag4.JPG" alt=""></a>
+        <a href="pesan.html"><img src="gambar/imag11.JPG" alt=""></a>
+        <a href="pesan.html"><img src="gambar/imag6.JPG" alt=""></a>
+        <br><br>
+    <div id="bum">
+        <a href="pesan.html"><img src="gambar/imag7.JPG" alt=""></a>
+        <a href="pesan.html"><img src="gambar/imag8.JPG" alt=""></a>
+        <a href="pesan.html"><img src="gambar/imag9.JPG" alt=""></a>
+        <a href="pesan.html"><img src="gambar/imag10.JPG" alt=""></a>
+    </div>
+</div>
+<div class="button">
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+</div>
+<footer>
+    <p>
+        Yosha Mahatma Indra Tedy Dani Kusuma Copyright@2019
+    </p>
+</body>
+</footer>
+<script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+
+        $(document).ready(function(){
+        $("#hide").click(function(){
+            $("#bum").hide(1000);
+        });
+        $("#show").click(function(){
+            $("#bum").show(1000);
+        });
+        });
+        </script>
+
+</html>

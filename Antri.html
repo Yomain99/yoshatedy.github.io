@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>E-Hospital Unej</title>
+<link rel="stylesheet" type="text/css" href="css/Antri.css">   
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+    <h1>E-Hospital</h1>
+        <a href="Pelayanan.html" >Rawat Inap</a></li>
+        <a href="Antri.html"style="font-weight:bold"class="active">Antri-Kesehatan</a></li>
+        <a id="myBtn">Hii!!! Yosha</a></li>
+        <a class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+</div>
+
+<div id="myModal" class="modal">
+
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Apakah anda yakin akan keluar?</p>
+    <button id="modal-btn-yes">
+        Ya
+    </button>
+    <button id="modal-btn-no">
+        Tidak
+    </button>
+  </div>
+
+</div>
+<div class="kotak">
+    <h1>Antri-Kesehatan</h1>
+</div>
+            <table class="tab">
+                    <tr>
+                        <th>No</th>
+                        <th>Nama Dokter</th>
+                        <th>Bagian</th>
+                        <th>Hari Kerja</th>
+                        <th>Jam Kerja</th>
+                        </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>dr. Andi Nirmalasari</td>
+                        <td>Dokter Umum</td>
+                        <td>kamis-minggu</td>
+                        <td>07.00-10.00 wib</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Prof. Dr. dr. Syarifuddin Rauf, Sp.A (K) </td>
+                        <td>Anak</td>
+                        <td>senin</td>
+                        <td>08.00-15.00 wib</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Dr. dr. Syamsul Hilal Salam, Sp.An</td>
+                        <td>Anestesi</td>
+                        <td>selasa</td>
+                        <td>10.00-16.00 wib</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>dr. Nita Mariana, M.Kes, Sp.BA</td>
+                        <td>Bedah Anak</td>
+                        <td>rabu</td>
+                        <td>10.00-14.00 wib</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Dr. dr. Ibrahim Labeda, Sp.B-KBD</td>
+                        <td>Bedah Digestif</td>
+                        <td>kamis</td>
+                        <td>12.00-15.00 wib</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>drg. Muhammad Ruslin, M.Kes, Sp.BM</td>
+                        <td>Bedah Gimul</td>
+                        <td>jumat</td>
+                        <td>08.00-14.00 wib</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>dr. Salman Ardi Syamsu, Sp.B, ONK </td>
+                        <td>Bedah Onkologi</td>
+                        <td>sabtu</td>
+                        <td>09.00-13.00 wib</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>dr. Muhammad Andry Usman, Sp.OT, Ph.D</td>
+                        <td>Bedah Orthopedi </td>
+                        <td>kamis-sabtu</td>
+                        <td>13.00-15.00 wib</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Dr. dr. Fonny Josh, Sp.BP-RE (K) B.Mikro</td>
+                        <td>Bedah Plastik</td>
+                        <td>rabu-jumat</td>
+                        <td>09.00-16.00 wib</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>dr. Aristianti, Sp.BS</td>
+                        <td>Bedah Saraf</td>
+                        <td>selasa-rabu</td>
+                        <td>09.00-15.00</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>dr. Syarif Bakri, Sp.U Bedah Urologi </td>
+                        <td> Bedah Urologi </td>
+                        <td>kamis</td>
+                        <td>12.00-20.00</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>dr. Devintha Virani, M.Kes, Sp.GK</td>
+                        <td> Gizi Klinik </td>
+                        <td>minggu</td>
+                        <td>10.00-16.00 wib</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>dr. St. Rabiul Zatalia Ramadhan, Sp.PD</td>
+                        <td>Interna</td>
+                        <td>senin-sabtu</td>
+                        <td>12.00-18.00 wib</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>Dr. dr. Muzakkir Amir, Sp.JP</td>
+                        <td>Kardiologi</td>
+                        <td>selasa-jumat</td>
+                        <td>12.00-16.00 wib</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>dr. Yunita Sp.M (K), M.Kes</td>
+                        <td>Mata</td>
+                        <td>rabu-kamis</td>
+                        <td>10.00-19.00 wib</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>dr. Cahyono Kaelan, Ph.D, Sp.PA (K)</td>
+                        <td>Patologi Anatomi </td>
+                        <td>minggu</td>
+                        <td>10.00-16.00 wib</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>dr. Isnaniah, Sp. ONK. Rad</td>
+                        <td>Radiologi</td>
+                        <td>senin</td>
+                        <td>10.00-15.00 wib</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>Dr. dr. Audry Devisanty Muysang, Sp.S, M.Si</td>
+                        <td>Saraf</td>
+                        <td>senin-rabu</td>
+                        <td>10.00-16.00 wib</td>
+                    </tr>
+                    </tbody>
+                </table>
+                
+            <table id="table" class="tab">
+                    <tr>
+                        <th>Nama</th>
+                        <th>Email</th>
+                        <th>Alamat</th>
+                        <th>Agama</th>
+                        <th>Dokter</th>
+                        <th>Keluhan</th>
+                        <th>tanggal kedatangan</th>
+                        </tr>
+                        <tr>
+                        <td>Kian Santang</td>
+                        <td>S@gom</td>
+                        <td>Ds. kurung ajur</td>
+                        <td>Islam</td>
+                        <td>dr. Yunita Sp.M (K), M.Kes</td>
+                        <td>Sakit Mata</td>
+                        <td>19/03/2020</td>
+                    </tr>
+                        <tr>
+                            <td>Prabu Wangi</td>
+                            <td>Pr@gl.com</td>
+                            <td>Ds. Jempalikan</td>
+                            <td>Islam</td>
+                            <td>dr. Andi Nirmalasari</td>
+                            <td>Demam Tak kunjung Pulang</td>
+                            <td>28/02/2020</td>
+                        </tr>
+                </table>
+                <br>
+                <br>
+            <div class="tab_2" id="bammm">
+            <button id="show">Daftar</button>
+            <button id="hide">Tutup</button>
+            </div>
+            <div class="tab_2" id="bum">
+                Nama Lengkap:<input type="text" name="nama" id="nama" autocomplete="off">
+                Email :<input type="email" name="email" id="email">
+                Alamat :<input type="text" name="alamat" id="alamat">
+                Agama :<input type="text" name="agama" id="agama">
+                Dokter :<input type="text" name="dokter" id="dokter">
+                Keluhan :<input type="text" name="keluhan" id="keluhan">
+                Tanggal Pemeriksaan :<input type="date" name="tanggalpemeriksaan" id="tanggalpemeriksaan">
+                <button onclick="addHtmlTableRow();">Tambah</button>
+                <button onclick="removeSelectedRow();">Hapus</button>
+            </div>
+            <br>
+            <br><br>
+
+    </body>
+</html>
+<footer>
+    <p>
+        Yosha Mahatma Indra Tedy Dani Kusuma Copyright@2019
+    </p>
+</footer>
+<script src="js/javascript.js"></script> 
+<script>
+        $("#modal-btn-yes").on('click', function () {
+            window.location.href = 'index.html';
+            return false;
+            modal.style.display = "none";
+        })
+        
+            $("#modal-btn-no").on('click', function () {
+                var modal = document.getElementById("myModal");
+                modal.style.display = "none";
+            })
+</script>
