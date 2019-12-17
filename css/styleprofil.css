@@ -2,7 +2,7 @@ body{
   margin: 0;
   font-size: 15px;
   font-family: 'Segoe UI', Tahoma, Verdana, sans-serif ,Helvetica ,Arial, Helvetica, sans-serif;
-  background-color: #f4f4f4;
+  background-color: rgba(176, 176, 200, 0.448);
 }
 
 .topnav {
