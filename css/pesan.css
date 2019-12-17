@@ -65,7 +65,7 @@ body{
 
 .tab {
     border-collapse: collapse;
-    margin: 30px auto auto auto;
+    margin: 30px auto auto 200px;
     font-size: 0.9em;
     min-width: 400px;
     border-radius: 5px 5px 0 0;
@@ -113,7 +113,7 @@ input[type="number"]
     margin: 0;
     outline: 0;
     padding: 15px;
-    width: 303pt;
+    width: 275pt;
     background-color: #e8eeef;
     color: #8a97a0;
     box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
@@ -128,7 +128,7 @@ input[type="date"]{
     margin: 0;
     outline: 0;
     padding: 15px;
-    width: 303pt;
+    width: 275pt;
     background-color: #e8eeef;
     color: #8a97a0;
     box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
@@ -144,11 +144,12 @@ button{
     text-align: center;
     font-style: normal;
     border-radius: 5px;
-    width: 325pt;
+    width: 275pt;
     border: 1px solid teal;
     border-width: 1px 1px 3px;
     box-shadow: 0 -1px 0 rgba(255,255,255,0.1);
     margin-bottom: 10px; 
+    margin-left: 15px;
 }
 button:hover{
     font-weight: bold;
@@ -238,7 +239,7 @@ footer {
     }
     #newsletter button{
     display: block;
-    width: 100%;
+    width: 95%;
     }
     #newsletter input[type="email"]{
     width: 100%;
@@ -256,7 +257,8 @@ footer {
       text-align: left;
     }
     .tab {
-        font-size: 0.4em;
+        font-size: 0.38em;
+        margin: 30px auto auto auto;
     }
     footer{
     height: 45px;
