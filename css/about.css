@@ -2,7 +2,7 @@ body{
   margin: 0;
   font-size: 15px;
   font-family: 'Segoe UI', Tahoma, Verdana, sans-serif ,Helvetica ,Arial, Helvetica, sans-serif;
-  background-color: #f4f4f4;
+  background-color: rgba(133, 133, 224, 0.448);
   color: #444;
 }
 
@@ -13,6 +13,7 @@ color: #fff;
 min-height: 7px;
 border-bottom: 5px solid #7e7e7e;
 padding: 20px;
+width: 100%;
 }
 .topnav h1{
   float: right;
@@ -183,7 +184,7 @@ a{
     margin-left: 15px;
   }
   footer{
-    width: auto;
+    width: 100%;
   }
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
