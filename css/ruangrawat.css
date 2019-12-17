@@ -2,7 +2,7 @@ body{
     margin: 0;
     font-size: 15px;
     font-family: sans-serif;
-    background-color: #f4f4f4;
+    background-color: rgba(176, 176, 200, 0.448);
 }
 
 .topnav {
